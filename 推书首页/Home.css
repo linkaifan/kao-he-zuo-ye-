@@ -1,0 +1,198 @@
+body{
+	text-align: center;
+	background: url(img/bg.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+#bg{
+	height: 100%;
+	width: 100%;
+	position:fixed;
+}
+.landIcon{                            /*右上角登陆图标*/
+	position:absolute;
+	top: 6%;
+	right: 6%;
+	width: 2.7%;height: 4.1%;
+}
+#loginBox{                             /*登陆框，当点击上面图标时弹出，点击X图标消失*/
+	position: absolute;
+	width: 40%;height:60%;
+	top: 20%;
+	left: 50%;
+	margin-left: -20%;
+    border:2px solid rgb(77, 73, 71);
+    background-color: rgb(239, 243, 246);
+    opacity: 0.902;
+    box-shadow: inset 0px 0px 0px 0px rgba(6, 0, 1, 0.66);
+    z-index: 1;
+    display:none;   
+}
+#close{                          /*X图标*/
+	display: block;
+	position: absolute;
+	top: 4%;
+	right: 4%;	
+	height: 5.7%;width: 4%;
+}
+#logo2{                        /*登陆框里面的logo*/
+	display: block;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-left: -16.5%;
+	width:33%;height: 25%;
+}
+#identity{                   /*输入用户名的框*/
+	position: absolute;
+	top: 46%;
+	font-size: 24px;
+    font-family: "Adobe Heiti Std";
+    color: rgb(77, 79, 85);
+    width: 100%;
+
+
+}
+#loginText,#passText{          /*两个输入文本*/
+	text-indent: 1em;
+	display: inline-block;
+	font-size: 20px;
+    font-family: "Adobe Heiti Std";
+    color: rgba(77, 79, 85, 0.651);
+    margin-left: 10px;
+    border: 0.1px solid gray;
+    width: 40%;
+    border-radius: 21px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 3.28px 3.774px 9.9px 1.1px rgba(0, 0, 0, 0.11);
+    padding-left:8px;    
+}
+#password{                 /*输入密码的框*/
+	position: absolute;
+	top: 65%;
+	font-size: 24px;
+    font-family: "Adobe Heiti Std";
+    color: rgb(77, 79, 85);
+    width: 100%;
+}
+#password input,
+#identity input{
+	height: 35px;
+}
+#login{                 /*登陆按钮*/
+	position: absolute;
+	top: 80%;
+	right: 50%;
+	width: 20%;
+	height: 11%;
+}
+#sign{                     /*注册按钮*/
+	position: absolute;
+	top: 83%;
+	right: 30%;
+	height:11%;
+	font-size: 20px;
+    font-family: "Adobe Heiti Std";
+    color: rgb(114, 116, 121);
+    text-decoration: underline;
+    line-height: 1.2;
+}
+
+.logo{                   /*大logo*/
+	position: absolute;
+	width: 27%;
+	height: 25%;
+	top: 30%;
+	left: 50%;
+	margin-left: -13%;
+
+}
+.logo img{
+	display: block;
+	margin: 0 auto;
+	width: 65%;
+	height: 85%;
+}
+.search img:hover,.landIcon img:hover,.Btn:hover,#sign:hover,#Loginbutton:hover,#close:hover           /*使鼠标进过其，图标变换*/
+{
+	cursor:pointer;  
+}
+.logo p{                            /*Logo下面的文字*/
+	margin: 1% auto;
+    font-family: "FZCJHJW";
+    color: rgba(63, 49, 33, 0.651);
+    font-size: 1.3em;
+    font-weight:bold;
+
+}
+.search{                 /*搜索栏整个大框*/
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	width: 25%;
+	height: 4.8%;
+	margin-left: -12.5%;
+	border-width: 0.1px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 21px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 3.28px 3.774px 9.9px 1.1px rgba(0, 0, 0, 0.11);
+}
+.search img{                 /*搜索栏右边的图标*/
+	position: absolute;
+	top: 20%;right: 3%;
+}
+.search input{             /*搜索里面的输入框*/
+	position: absolute;
+	width: 75%;height: 84%;
+	left: 10%;top: 6.3%;
+	border: 0px ;
+	font-family: "Adobe Heiti Std";
+    color: rgb(77, 79, 85);
+    -moz-transform: matrix( 1.09082563045265,0,0,1.08200371860065,0,0);
+    -webkit-transform: matrix( 1.09082563045265,0,0,1.08200371860065,0,0);
+    -ms-transform: matrix( 1.09082563045265,0,0,1.08200371860065,0,0);
+    font-size: 1.7em;
+    text-indent: 0.5em;
+}
+.search input:focus,                   
+#loginBox input:focus
+{
+	outline: none;
+
+}
+.nav{
+	position: absolute;
+	width: 28%;height: 4%;
+	left: 39%;top: 65%;
+	text-align: left;
+}
+.Btn{
+	border: 1px solid rgb(134, 129, 129);
+	display: inline-block;
+	width: 15%;
+	margin-left: 14px;
+    height:70%;
+    background-color: rgb(239, 239, 239);
+    opacity: 0.76;
+    border-radius: 21px;
+    font-size: 1em;
+    font-family: "Microsoft YaHei";
+    margin-right: 1%; 
+    text-align: center;
+    line-height: 1.4em;
+    color: rgb(4, 4, 4);
+ }
+ /*css做的loading动画，好渣，先放着，以后优化*/
+ #LoadingBox{                       /*遮罩*/
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+	background-color: rgb(214, 210, 210);
+	opacity: 0.851;
+	z-index: 3;
+	display: none;
+}
+
+
